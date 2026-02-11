@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Poster Desain</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="imgModal" class="modal" onclick="closeModal()">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+
+<section class="poster-page">
+  <h2>Portofolio Desain</h2>
+  <p class="subtitle">Kumpulan karya desain</p>
+
+  <div class="poster-grid">
+
+    <div class="poster-card">
+      <img src="nescafe fattah dan bene (1).jpg" alt="Poster 1" onclick="openModal(this)">
+      <h4>Poster Produk</h4>
+    </div>
+
+    <div class="poster-card">
+      <img src="x banner baru (1).png" alt="Poster 2" onclick="openModal(this)">
+      <h4>Desain X-Banner</h4>
+    </div>
+
+    <div class="poster-card">
+      <img src="X-Stand_Banner_Mockup_1 (1).png" alt="Poster 3" onclick="openModal(this)">
+      <h4>Mock up X-Banner</h4>
+    </div>
+
+  <script>
+function openModal(img) {
+  document.getElementById("imgModal").style.display = "flex";
+  document.getElementById("modalImg").src = img.src;
+}
+
+function closeModal() {
+  document.getElementById("imgModal").style.display = "none";
+}
+</script>

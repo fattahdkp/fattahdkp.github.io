@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Fotografi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section>
+  <h2 class="title">Karya Fotografi</h2>
+
+  <div class="portfolio">
+    <div class="card">
+      <img src="DKV04443 (1).jpg" onclick="openModal(this)">
+    </div>
+    <div class="card">
+      <img src="DKV05658 (1) (1).jpg" onclick="openModal(this)">
+    </div>
+    <div class="card">
+      <img src="FOTO MODEL (2).jpg" onclick="openModal(this)">
+    </div>
+    <div class="card">
+      <img src="FOTO PRODUK PARFUM (1) (1).jpg" onclick="openModal(this)">
+    </div>
+    <div class="card">
+      <img src="FOTO PRODUK PARFUM (2).jpg" onclick="openModal(this)">
+    </div>
+    <div class="card">
+      <img src="BLACK & WHITE (2).jpg" onclick="openModal(this)">
+    </div>
+    <div class="card">
+      <img src="DKV04153 (1).jpg" onclick="openModal(this)">
+    </div>
+    <div class="card">
+      <img src="MDP_0015.jpg" onclick="openModal(this)">
+    </div>
+    <div class="card">
+      <img src="FOTO MODEL (1) (1).jpg" onclick="openModal(this)">
+    </div>
+    <div class="card">
+      <img src="Football Sport.jpg"onclick="openModal(this)">
+    </div>
+    <div class="card">
+      <img src="DSC05265.jpg" onclick="openModal(this)">
+    </div>
+    <div class="card">
+      <img src="FOTO BAND.jpg" onclick="openModal(this)">
+    </div>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="imgModal" class="modal" onclick="closeModal()">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+
+<script>
+function openModal(img) {
+  document.getElementById("imgModal").style.display = "flex";
+  document.getElementById("modalImg").src = img.src;
+}
+
+function closeModal() {
+  document.getElementById("imgModal").style.display = "none";
+}
+</script>
+
+</body>
+</html>
